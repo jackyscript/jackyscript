@@ -10,7 +10,19 @@ import ExperienceItem from './ExperienceItem.vue'
     <template #location>Berlin</template>
     <template #position> Sofware Developer </template>
     <template #date>since Jan. 2025</template>
+    <ul tabindex="0">
+      <li>
+        Developing a networking platform for stakeholders in the German‑Czech border region.
+      </li>
+      <li>
+        Developing a participation platform for citizens in the Treptow‑Köpenick district of Berlin.
+      </li>
+      <li>
+        Developing a webapp to leverage IT infrastructure documentation.
+      </li>
+    </ul>
   </ExperienceItem>
+
   <ExperienceItem>
     <template #company>
       SRP ‑ Systementwicklung für Raumbezogene Planung GmbH (f.k.a Gesellschaft für Stadt‑ und
