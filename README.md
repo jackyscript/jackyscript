@@ -1,4 +1,8 @@
+[![Deploy to GitHub Pages](https://github.com/jackyscript/jackyscript/actions/workflows/deploy.yml/badge.svg)](https://github.com/jackyscript/jackyscript/actions/workflows/deploy.yml)
+
 # jackyscript
+
+[![Deploy to GitHub Pages](https://github.com/jackyscript/jackyscript/actions/workflows/deploy.yml/badge.svg)](https://github.com/jackyscript/jackyscript/actions/workflows/deploy.yml)
 
 Hello 👋 my name is Jacky (pronouns "he/him").
 
