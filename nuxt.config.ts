@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   css: ["~/assets/css/pico.jade.min.css"],
   modules: ["nuxt-svgo"],
   app: {
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
     baseURL: "/jackyscript/",
   },
 });
