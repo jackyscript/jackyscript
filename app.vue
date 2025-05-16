@@ -7,15 +7,15 @@
     <HeaderComponent></HeaderComponent>
     <MenuComponent></MenuComponent>
     <nav class="nav container">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/skills">Skills</RouterLink>
-      <RouterLink to="/experience">Experience</RouterLink>
-      <RouterLink to="/education">Education</RouterLink>
-      <RouterLink to="/publication">Publications</RouterLink>
+      <NuxtLink to="/">Home</NuxtLink>
+      <NuxtLink to="/skills">Skills</NuxtLink>
+      <NuxtLink to="/experience">Experience</NuxtLink>
+      <NuxtLink to="/education">Education</NuxtLink>
+      <NuxtLink to="/publication">Publications</NuxtLink>
     </nav>
   </header>
 
-  <RouterView />
+  <NuxtPage />
 
   <footer class="container">
     <a href="#top">Go to top</a>
