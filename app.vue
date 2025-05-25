@@ -2,24 +2,28 @@
   <div>
     <NuxtRouteAnnouncer />
     <header>
-    <!--img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /-->
-    
-    <HeaderComponent></HeaderComponent>
-    <MenuComponent></MenuComponent>
-    <nav class="nav container">
-      <NuxtLink to="/">Home</NuxtLink>
-      <NuxtLink to="/skills">Skills</NuxtLink>
-      <NuxtLink to="/experience">Experience</NuxtLink>
-      <NuxtLink to="/education">Education</NuxtLink>
-      <NuxtLink to="/publication">Publications</NuxtLink>
-    </nav>
-  </header>
+      <!--img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /-->
 
-  <NuxtPage />
+      <HeaderComponent></HeaderComponent>
+      <MenuComponent></MenuComponent>
+      <nav class="nav container">
+        <ul>
+          <li>
+            <NuxtLink to="/">Home</NuxtLink>
+          </li>
+          <li><NuxtLink to="/skills">Skills</NuxtLink></li>
+          <li><NuxtLink to="/experience">Experience</NuxtLink></li>
+          <li><NuxtLink to="/education">Education</NuxtLink></li>
+          <li><NuxtLink to="/publication">Publications</NuxtLink></li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer class="container">
-    <a href="#top">Go to top</a>
-  </footer>
+    <NuxtPage />
+
+    <footer class="container">
+      <a href="#top">Go to top</a>
+    </footer>
   </div>
 </template>
 
