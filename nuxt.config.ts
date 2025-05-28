@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
   css: ["~/assets/css/pico.jade.min.css"],
-  modules: ["nuxt-svgo"],
+  modules: ["nuxt-svgo", "@nuxt/content"],
   app: {
     head: {
       link: [
