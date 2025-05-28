@@ -8,6 +8,6 @@
 const route = useRoute();
 const subpageSuffix = computed(() => {
   if (!route.name || route.fullPath === "/") return "";
-  return route.fullPath;
+  return route.path;
 });
 </script>
