@@ -13,7 +13,7 @@ const { data: blogEntries } = await useAsyncData("blog", () =>
         <p>{{ entry.description }}</p>
         <small>
           <NuxtLink :to="entry.path"> Continue reading </NuxtLink> -
-          {{ entry.date }}</small
+          {{ $dayjs(entry.date).format("MMMM DD, YYYY") }}</small
         >
       </body>
     </article>

@@ -14,11 +14,12 @@
   },
   "lint-staged": {
     "**/*.{js,ts,vue}": "eslint . --fix",
-    "**/*.md": "sh -c 'sed -i \"s/timestamp\\.now()/$(date +\"%B %d, %Y\")/g\" \"$1\"' _"
+    "**/*.md": "sh -c sed -i \"0,/^updated: [0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}/s//updated: $(date +%Y-%m-%d)/\"' _"
   },
   "dependencies": {
     "@nuxt/content": "^3.5.1",
     "@nuxt/eslint": "^1.4.1",
+    "dayjs-nuxt": "^2.1.11",
     "eslint": "^9.28.0",
     "nuxt": "^3.17.3",
     "nuxt-svgo": "^4.1.2",

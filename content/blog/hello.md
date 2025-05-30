@@ -1,6 +1,6 @@
 ---
-date: May 28, 2025
-updated: May 30, 2025
+date: 2025-05-28
+updated: 2025-05-31
 ---
 
 # Hello visitor!
