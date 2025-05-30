@@ -5,7 +5,7 @@ updated: 2025-05-31
 
 # Hello visitor!
 
-Welcome to my first blog entry! I finally spent some time and set up `Nuxt Content` for my personal website project to provide the tools I need for blogging.
+Welcome to my first blog post! I finally spent some time and set up `Nuxt Content` for my personal website project to provide the tools I need for blogging.
 
 It was more difficult then I expected, but I would like to share with you what I have found out.
 
@@ -21,21 +21,21 @@ Basically you have to go through the following steps:
 
 ```vue
 <script setup>
-const { data: blogEntries } = await useAsyncData("blog", () =>
+const { data: blogPosts } = await useAsyncData("blog", () =>
   queryCollection("content").all()
 );
 
 </script>
 
 <template>
-  <section v-for="entry in blogEntries">
+  <section v-for="post in blogPosts">
     <article>
       <body>
-        <h4>{{ entry.title }}</h4>
-        <p>{{ entry.description }}</p>
+        <h4>{{ post.title }}</h4>
+        <p>{{ post.description }}</p>
         <small>
-          <NuxtLink :to="entry.path"> Continue reading </NuxtLink> -
-          {{ entry.date }}</small
+          <NuxtLink :to="post.path"> Continue reading </NuxtLink> -
+          {{ post.date }}</small
         >
       </body>
     </article>
@@ -73,5 +73,6 @@ const { data: page } = await useAsyncData(route.path, () => {
 That should be it, hopefully this is helpful for anyone out there.
 
 Happy coding!
+
 
 ~ jacky

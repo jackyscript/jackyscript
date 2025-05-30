@@ -1,0 +1,55 @@
+---
+date: 2025-05-28
+updated: 2025-05-31
+---
+
+# Siberian dogs, fiber, fluff and theater
+
+You may be wondering what the title is trying to say. It is unsurprisingly nothing so special.
+
+Recently I have worked with two tools one of them is [`Husky`](https://typicode.github.io/husky/).
+
+With that you can set up self defined processes called git-hooks that are automatically executed when working with `git`.
+
+Most commonly it is used for applying static code analysis or formatting, before committing your code, hence `pre-commit` hook, ensuring code quality.
+
+For setting up the pre-commit hook itself a tool called `lint-staged` is often used. Essentially the idea is to apply linting to your staged files. With that you can execute for instance `eslint` or `prettier` to apply above mentioned code quality checks.
+
+So my `pre-commit` file is nothing out of the ordinary:
+
+```
+npx lint-staged
+```
+
+It executes a node script that I have set up in my `package.json` file:
+
+```json
+{
+  ...
+  "lint-staged": {
+    // All the world's a stage
+  },
+  ...
+}
+```
+
+That being said, it is not restricted to linting, arbitrary shell commands can be executed when linting your staged files.
+Beyond checking my codebase, which `Husky` and `lint-staged` perfectly does, I used those tools to apply a last modified timestamp to my blog posts.
+
+Basically I add two timestamps as metadata in a special section in my blog files above the actual content to denote the date the blog post was created initially and the last modified date like so:
+
+```yaml
+---
+date: 2025-05-28
+updated: 2025-05-31
+---
+```
+
+I wanted to make sure, whenever I edit a blog post, that it contains the last updated date.
+
+This feature alone is not so exciting, but for me it was a test field, where I could experiment, take `lint-staged` and use it for a different use case, which served me well.
+
+Thanks for checking in, see you next time!
+
+
+~ jacky
