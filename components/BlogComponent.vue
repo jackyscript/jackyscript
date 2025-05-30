@@ -1,18 +1,18 @@
 <script setup lang="ts">
-const { data: blogEntries } = await useAsyncData("blog", () =>
+const { data: blogPosts } = await useAsyncData("blog", () =>
   queryCollection("content").order("date", "DESC").all()
 );
 </script>
 
 <template>
-  <section v-for="entry in blogEntries" :key="entry.id">
+  <section v-for="post in blogPosts" :key="post.id">
     <article>
       <body>
-        <h4>{{ entry.title }}</h4>
-        <p>{{ entry.description }}</p>
+        <h4>{{ post.title }}</h4>
+        <p>{{ post.description }}</p>
         <small>
-          <NuxtLink :to="entry.path"> Continue reading </NuxtLink> -
-          {{ $dayjs(entry.date).format("MMMM DD, YYYY") }}</small
+          <NuxtLink :to="post.path"> Continue reading </NuxtLink> -
+          {{ $dayjs(post.date).format("MMMM DD, YYYY") }}</small
         >
       </body>
     </article>
