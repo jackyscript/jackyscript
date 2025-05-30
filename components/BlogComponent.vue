@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const { data: blogEntries } = await useAsyncData("blog", () =>
   queryCollection("content").all()
 );

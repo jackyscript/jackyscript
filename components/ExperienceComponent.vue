@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ExperienceItem from './ExperienceItem.vue'
 </script>
 

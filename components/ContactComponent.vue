@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ContactItem from './ContactItem.vue'
 </script>
 

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import PublicationComponent from '../components/PublicationComponent.vue'
 import MainComponent from '../components/MainComponent.vue'
 </script>
