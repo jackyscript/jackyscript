@@ -1,5 +1,5 @@
 <script setup>
-defineProps({
+withDefaults(defineProps({
   id: {
     type: String,
     required: true
@@ -8,6 +8,8 @@ defineProps({
     type: String,
     required: false
   }
+}), {
+  value: ""
 })
 </script>
 <template>
