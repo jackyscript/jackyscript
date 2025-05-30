@@ -44,7 +44,7 @@ const { data: blogEntries } = await useAsyncData("blog", () =>
 
 - In the `pages` directory create a folder called `[blog]`, the name and the square brackets around that will make the path dynamic and accessible for `Nuxt`, and a dynamic page called `[...slug].vue` with the following content:
 ```vue
-<script lang="ts" setup>
+<script setup>
 const route = useRoute();
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection("content").path(route.path).first();
