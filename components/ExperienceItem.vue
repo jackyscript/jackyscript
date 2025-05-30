@@ -3,16 +3,16 @@
     <article>
       <details>
         <summary>
-          <h4><slot name="company"></slot></h4>
-          <h5><slot name="position"></slot></h5>
+          <h4><slot name="company"/></h4>
+          <h5><slot name="position"/></h5>
           <h6>
-            <slot name="location"></slot>
+            <slot name="location"/>
           </h6>
           <footer>
-            <small><slot name="date"></slot></small>
+            <small><slot name="date"/></small>
           </footer>
         </summary>
-        <slot></slot>
+        <slot/>
       </details>
     </article>
   </section>

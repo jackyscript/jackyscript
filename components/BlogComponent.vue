@@ -10,7 +10,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <section v-for="entry in blogEntries">
+  <section v-for="entry in blogEntries" :key="entry.id">
     <article>
       <body>
         <h4>{{ entry.title }}</h4>

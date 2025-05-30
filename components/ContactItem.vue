@@ -13,8 +13,8 @@ defineProps({
 <template>
   <section>
     <article>
-      <slot name="icon"></slot>
-      <h3><slot name="heading"></slot></h3>
+      <slot name="icon"/>
+      <h3><slot name="heading"/></h3>
       <p v-if="value !== undefined" />
       <slot name="link">{{ value }}</slot>
     </article>

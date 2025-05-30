@@ -2,16 +2,16 @@
   <section>
     <article tabindex="0">
       <summary>
-        <h4><slot name="title"></slot></h4>
-        <h5><slot name="occupation"></slot></h5>
+        <h4><slot name="title"/></h4>
+        <h5><slot name="occupation"/></h5>
         <h6>
-          <slot name="location"></slot>
+          <slot name="location"/>
         </h6>
         <footer>
-          <small><slot name="date"></slot></small>
+          <small><slot name="date"/></small>
         </footer>
       </summary>
-      <slot></slot>
+      <slot/>
     </article>
   </section>
 </template>

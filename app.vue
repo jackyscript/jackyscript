@@ -4,8 +4,8 @@
     <header>
       <!--img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /-->
 
-      <HeaderComponent></HeaderComponent>
-      <MenuComponent></MenuComponent>
+      <HeaderComponent/>
+      <MenuComponent/>
       <nav class="nav container">
         <ul>
           <li>

@@ -3,9 +3,9 @@
     <article>
       <details>
         <summary>
-          <h4><slot name="type"></slot></h4>
+          <h4><slot name="type"/></h4>
         </summary>
-        <slot name="skills"></slot>
+        <slot name="skills"/>
       </details>
     </article>
   </section>
