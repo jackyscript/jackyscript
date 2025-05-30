@@ -13,7 +13,8 @@
     "lint:fix": "eslint . --fix"
   },
   "lint-staged": {
-    "**/*.{js,ts,vue}": "eslint . --fix"
+    "**/*.{js,ts,vue}": "eslint . --fix",
+    "**/*.md": "sh -c 'sed -i \"s/timestamp\\.now()/$(date +\"%B %d, %Y\")/g\" \"$1\"' _"
   },
   "dependencies": {
     "@nuxt/content": "^3.5.1",
