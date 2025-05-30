@@ -7,13 +7,13 @@ updated: 2025-05-31
 
 Welcome to my first blog post! I finally spent some time and set up `Nuxt Content` for my personal website project to provide the tools I need for blogging.
 
-It was more difficult then I expected, but I would like to share with you what I have found out.
+It was more difficult than I expected, but I would like to share with you what I have found out.
 
 I created my first page, which is the page you are looking at, in the folder `content` as described in the `Nuxt Content` [documentation](https://content.nuxt.com/docs/getting-started/installation).
 
-At the time of writing (May 2025), unfortunately, the documentation is lacking specific explanations or examples how to integrate markdown files in an existing page structure beyond the usual index, i.e. the path at `/`, page examples.
+At the time of writing (May 2025), unfortunately, the documentation is lacking specific explanations or examples on how to integrate markdown files in an existing page structure beyond the usual index, i.e. the path at `/`, page examples.
 
-Basically you have to go through the following steps:
+Basically, you have to go through the following steps:
 
 - Create a subdirectory in your `content` directory in your repository. I used `blog`, because my blogs should be listed under that path.
 - Put your markdown files there.
@@ -24,7 +24,6 @@ Basically you have to go through the following steps:
 const { data: blogPosts } = await useAsyncData("blog", () =>
   queryCollection("content").all()
 );
-
 </script>
 
 <template>
@@ -34,16 +33,16 @@ const { data: blogPosts } = await useAsyncData("blog", () =>
         <h4>{{ post.title }}</h4>
         <p>{{ post.description }}</p>
         <small>
-          <NuxtLink :to="post.path"> Continue reading </NuxtLink> -
-          {{ post.date }}</small
-        >
+          <NuxtLink :to="post.path">Continue reading</NuxtLink> -
+          {{ post.date }}
+        </small>
       </body>
     </article>
   </section>
 </template>
 ```
 
-- In the `pages` directory create a folder called `[blog]`, the name and the square brackets around that will make the path dynamic and accessible for `Nuxt`, and a dynamic page called `[...slug].vue` with the following content:
+- In the `pages` directory, create a folder called `[blog]`. The name and the square brackets around it will make the path dynamic and accessible for `Nuxt`, and a dynamic page called `[...slug].vue` with the following content:
 ```vue
 <script setup>
 const route = useRoute();
@@ -56,23 +55,23 @@ const { data: page } = await useAsyncData(route.path, () => {
   <MainComponent>
     <ContentRenderer v-if="page" :value="page" />
     <template v-else>
-    <div class="empty-page">
-      <h1>Page Not Found</h1>
-      <p>Oops! The content you're looking for doesn't exist.</p>
-      <NuxtLink to="/">Go back home</NuxtLink>
-    </div>
-  </template>
+      <div class="empty-page">
+        <h1>Page Not Found</h1>
+        <p>Oops! The content you're looking for doesn't exist.</p>
+        <NuxtLink to="/">Go back home</NuxtLink>
+      </div>
+    </template>
   </MainComponent>
 </template>
 ```
-- Using the composable `useRoute` you can query the markdown file corresponding to the name of the current path and render that using `ContentRenderer`.
+- Using the composable `useRoute`, you can query the markdown file corresponding to the name of the current path and render that using `ContentRenderer`.
 
+- For instance, the underlying markdown file `hello.md` for this page is set up with this configuration at the path `blog/hello`.
 
-- For instance the underlying markdown file `hello.md` for this page is set up with this configuration at the path `blog/hello`.
+In summary, we can create additional markdown files in our `content/blog` directory, and the application will automatically generate new blog posts on our blog overview page.
 
-That should be it, hopefully this is helpful for anyone out there.
+That should be it. Hopefully, this is helpful for anyone out there.
 
 Happy coding!
-
 
 ~ jacky
