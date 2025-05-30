@@ -1,15 +1,11 @@
-<script setup>
-withDefaults(defineProps({
-  id: {
-    type: String,
-    required: true
-  },
-  value: {
-    type: String,
-    required: false
-  }
-}), {
-  value: ""
+<script setup lang="ts">
+interface Props {
+  id: string
+  value?: string
+}
+
+withDefaults(defineProps<Props>(), {
+  value: undefined,
 })
 </script>
 <template>
