@@ -3,10 +3,6 @@ const { data: blogEntries } = await useAsyncData("blog", () =>
   queryCollection("content").all()
 );
 
-useSeoMeta({
-  title: blogEntries.value?.title,
-  description: blogEntries.value?.description,
-});
 </script>
 
 <template>
