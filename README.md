@@ -4,6 +4,6 @@
 
 Hello 👋 my name is Jacky (pronouns "he/him").
 
-I have a passion for reactive and functional programming and I care for accessibility, user- and developer experience. I am an engineer in the field of geodesy and geospatial information 🌐 by training.
+I have a passion for reactive and functional programming and I care for accessibility, user and developer experience. I am an engineer in the field of geodesy and geospatial information 🌐 by training.
 
 Currently, I work as a software developer at &effect in Berlin. 
