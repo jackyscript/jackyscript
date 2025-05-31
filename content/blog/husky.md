@@ -10,11 +10,11 @@ However, the title is not meant to mislead, but rather to demonstrate the habit 
 
 Recently, I have worked with two interesting tools. One of them is [`Husky`](https://typicode.github.io/husky/).
 
-With it, you can set up self-defined processes called git hooks that are automatically executed when working with `git`.
+With it, you can easily set up custom processes called [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) that are automatically executed when working with the `git` version control system. Additionally, it allows you to share these git hooks with your team by including them in your repository.
 
-Most commonly, it is used for applying static code analysis or formatting before committing your code—hence the `pre-commit` hook—to ensure code quality.
+Most commonly, git hooks are used for applying static code analysis or formatting before committing your code to the repository—hence the `pre-commit` hook—to ensure code quality.
 
-To set up the pre-commit hook itself, a tool called `lint-staged` is often used. Essentially, the idea is to apply linting to your staged files. With it, you can execute, for instance, `eslint` or `prettier` to apply the aforementioned code quality checks.
+Now, regarding the actual steps in the pre-commit hook, developers often use a tool called `lint-staged`. The idea is to check the files that are about to be saved into the repository and apply final changes. For example, you could use tools like [`eslint`](https://eslint.org/) or [`prettier`](https://prettier.io/docs/) to perform code quality checks.
 
 So, my `pre-commit` file is nothing out of the ordinary:
 
@@ -35,7 +35,7 @@ It executes a node script that I have set up in my `package.json` file:
 ```
 
 That being said, it is not restricted to linting; arbitrary shell commands can be executed when processing your staged files.
-Beyond checking my codebase, which `Husky` and `lint-staged` do perfectly, I used these tools to apply a last modified timestamp to my blog posts.
+For this blog in particular, I used these tools to apply a last modified timestamp to my blog posts.
 
 Basically, I add two timestamps as metadata in a special section of my blog files above the actual content to denote the date the blog post was initially created and the last modified date, like so:
 
