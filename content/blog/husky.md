@@ -5,7 +5,8 @@ updated: 2025-05-31
 
 # Siberian dogs, fiber, fluff and theater
 
-You may be wondering what the title is trying to say. It is, unsurprisingly, nothing special and has little to do with the actual mammal, the remains of clothing, or anything remotely related to theater. However, the title is not meant to mislead, but rather to demonstrate the habit of people in tech of naming technical tools after phenomena from the real world.
+You may be wondering what the title is trying to say. It is, unsurprisingly, nothing special and has little to do with the actual mammal, the remains of clothing, or anything remotely related to theater.
+However, the title is not meant to mislead, but rather to demonstrate the habit of people in tech of naming technical tools after phenomena from the real world.
 
 Recently, I have worked with two interesting tools. One of them is [`Husky`](https://typicode.github.io/husky/).
 
@@ -46,6 +47,18 @@ updated: 2025-05-31
 ```
 
 I wanted to make sure that, whenever I edit a blog post, it contains the last updated date.
+
+I implemented a small shell script and added that to the `lint-staged` section:
+
+```json
+{
+  ...
+  "lint-staged": {
+    "**/*.md": "sh -c 'sed -i \"0,/^updated: [0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}/s//updated: $(date +%Y-%m-%d)/\" \"$1\"' _"
+  },
+  ...
+}
+```
 
 This feature alone is not so exciting, but for me, it was a test field where I could experiment—taking `lint-staged` and using it for a different use case—which served me well.
 
