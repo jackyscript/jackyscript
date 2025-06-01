@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import BlogComponent from "../components/BlogComponent.vue";
+import TheBlog from "../components/TheBlog.vue";
 import MainComponent from "../components/MainComponent.vue";
 </script>
 
 <template>
   <MainComponent>
-    <BlogComponent />
+    <TheBlog />
   </MainComponent>
 </template>

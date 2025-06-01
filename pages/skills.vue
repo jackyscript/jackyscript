@@ -1,10 +1,10 @@
 <script setup>
-import SkillsComponent from '../components/SkillsComponent.vue'
+import TheSkills from '../components/TheSkills.vue'
 import MainComponent from '../components/MainComponent.vue'
 </script>
 
 <template>
   <MainComponent>
-    <SkillsComponent />
+    <TheSkills />
   </MainComponent>
 </template>

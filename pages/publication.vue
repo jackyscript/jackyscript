@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import PublicationComponent from '../components/PublicationComponent.vue'
+import ThePublication from '../components/ThePublication.vue'
 import MainComponent from '../components/MainComponent.vue'
 </script>
 
 <template>
   <MainComponent>
-    <PublicationComponent />
+    <ThePublication />
   </MainComponent>
 </template>
 

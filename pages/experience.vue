@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import ExperienceComponent from '../components/ExperienceComponent.vue'
+import TheExperience from '../components/TheExperience.vue'
 import MainComponent from '../components/MainComponent.vue'
 </script>
 
 <template>
   <MainComponent>
-    <ExperienceComponent />
+    <TheExperience />
   </MainComponent>
 </template>
 

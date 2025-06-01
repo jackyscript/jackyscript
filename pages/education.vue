@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import EducationComponent from '../components/EducationComponent.vue'
+import TheEducation from '../components/TheEducation.vue'
 import MainComponent from '../components/MainComponent.vue'
 </script>
 
 <template>
   <MainComponent>
-    <EducationComponent />
+    <TheEducation />
   </MainComponent>
 </template>
 
