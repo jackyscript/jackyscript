@@ -8,7 +8,7 @@ import ExperienceItem from './ExperienceItem.vue'
       &effect data solutions GmbH
     </template>
     <template #location>Berlin</template>
-    <template #position> Sofware Developer </template>
+    <template #position> Software Developer </template>
     <template #date>since Jan. 2025</template>
     <ul tabindex="0">
       <li>
