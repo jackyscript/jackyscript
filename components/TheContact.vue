@@ -21,13 +21,31 @@ import ContactItem from "./ContactItem.vue";
     in Berlin. Some tools I am working with are listed below:
   </p>
   <ul>
-    <li><small data-tooltip="Vue"><svgo-logo aria-hidden="true" alt="Vue Logo" /></small></li>
-    <li><small data-tooltip="Nuxt"><svgo-icon-green aria-hidden="true" alt="Nuxt Logo" /></small></li>
     <li>
-      <small data-tooltip="TypeScript"><svgo-ts-logo-128 aria-hidden="true" alt="TS Logo" /></small>
+      <small data-tooltip="Vue"
+        ><svgo-logo aria-hidden="true" alt="Vue Logo"
+      /></small>
     </li>
-    <li><small data-tooltip="JS"><svgo-js aria-hidden="true" alt="JS Logo" /></small></li>
-    <li><small data-tooltip="Python"><svgo-python-logo-only aria-hidden="true" alt="Python Logo" /></small></li>
+    <li>
+      <small data-tooltip="Nuxt"
+        ><svgo-icon-green aria-hidden="true" alt="Nuxt Logo"
+      /></small>
+    </li>
+    <li>
+      <small data-tooltip="TypeScript"
+        ><svgo-ts-logo-128 aria-hidden="true" alt="TS Logo"
+      /></small>
+    </li>
+    <li>
+      <small data-tooltip="JS"
+        ><svgo-js aria-hidden="true" alt="JS Logo"
+      /></small>
+    </li>
+    <li>
+      <small data-tooltip="Python"
+        ><svgo-python-logo-only aria-hidden="true" alt="Python Logo"
+      /></small>
+    </li>
   </ul>
 
   <ContactItem id="mail" value="dezhijacky.fu [ at ] gmail.com">
