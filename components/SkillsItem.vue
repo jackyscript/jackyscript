@@ -1,12 +1,10 @@
 <template>
   <section>
     <article>
-      <details>
-        <summary>
-          <h4><slot name="type"/></h4>
-        </summary>
-        <slot name="skills"/>
-      </details>
+      <summary>
+        <h4><slot name="type" /></h4>
+      </summary>
+      <slot name="skills" />
     </article>
   </section>
 </template>

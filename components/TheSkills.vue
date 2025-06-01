@@ -1,45 +1,47 @@
 <script setup lang="ts">
-import SkillsItem from './SkillsItem.vue'
+import SkillsItem from "./SkillsItem.vue";
 </script>
 
 <template>
   <SkillsItem>
     <template #type> Programming languages </template>
     <template #skills>
+      <p>Currently working with:</p>
       <ul>
-        <li>Typescript/Javascript</li>
-        <li>Java</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
         <li>Python</li>
+      </ul>
+      <p>Previously worked with:</p>
+      <ul>
+        <li>Java</li>
         <li>Scala</li>
         <li>MATLAB</li>
         <li>C++</li>
+      </ul>
+      <p>
+        These are the languages I am interested in or with which I have been
+        dabbling:
+      </p>
+      <ul>
+        <li>Rust</li>
+        <li>Go</li>
       </ul>
     </template>
   </SkillsItem>
 
   <SkillsItem>
-    <template #type> Web </template>
-    <template #skills>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>HTTP</li>
-        <li>Apache Tomcat</li>
-        <li>REST</li>
-        <li>OpenLayers</li>
-        <li>JWT</li>
-      </ul>
-    </template>
-  </SkillsItem>
-  <SkillsItem>
     <template #type> Frameworks </template>
     <template #skills>
-      <ul>
-        <li>Vue</li>
-        <li>Spring</li>
-        <li>Angular</li>
-        <li>GWT</li>
-      </ul>
+      <p>
+        Currently, I mainly work with Vue.js/Nuxt on the frontend and PocketBase
+        or FastAPI on the backend.
+      </p>
+      <p>
+        In the past, I worked with Angular on the frontend and Spring Boot on the
+        backend.
+      </p>
+      <p>I have also worked for quite a while in desktop application programming using Java Swing.</p>
     </template>
   </SkillsItem>
   <SkillsItem>
@@ -62,6 +64,7 @@ import SkillsItem from './SkillsItem.vue'
         <li>OGC Standards</li>
         <li>QGIS</li>
         <li>PostGIS</li>
+        <li>OpenLayers</li>
         <li>Geotools</li>
       </ul>
     </template>
@@ -78,10 +81,10 @@ import SkillsItem from './SkillsItem.vue'
         <li>SVN</li>
         <li>Eclipse</li>
         <li>Visual Studio Code</li>
-        <li>Netbeans</li>
+        <li>NetBeans</li>
         <li>Swagger/OpenAPI</li>
         <li>Selenium</li>
-        <li>Pocketbase</li>
+        <li>PocketBase</li>
         <li>Ansible</li>
         <li>Terraform</li>
       </ul>
@@ -92,12 +95,12 @@ import SkillsItem from './SkillsItem.vue'
     <template #type> Other </template>
     <template #skills>
       <ul>
-        <li>Gitlab</li>
+        <li>GitLab</li>
         <li>Gitea</li>
         <li>Bugzilla</li>
         <li>MS Office</li>
         <li>Linux</li>
-        <li>LaTex</li>
+        <li>LaTeX</li>
       </ul>
     </template>
   </SkillsItem>
