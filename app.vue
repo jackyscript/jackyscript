@@ -18,7 +18,6 @@
             <details class="dropdown">
               <summary>About me</summary>
               <ul dir="rtl">
-                <li><NuxtLink to="/skills">Skills</NuxtLink></li>
                 <li><NuxtLink to="/experience">Experience</NuxtLink></li>
                 <li><NuxtLink to="/education">Education</NuxtLink></li>
                 <li><NuxtLink to="/publication">Publications</NuxtLink></li>
