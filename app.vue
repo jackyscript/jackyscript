@@ -20,7 +20,7 @@
               <ul dir="rtl">
                 <li><NuxtLink to="/experience">Experience</NuxtLink></li>
                 <li><NuxtLink to="/education">Education</NuxtLink></li>
-                <li><NuxtLink to="/publication">Publications</NuxtLink></li>
+                <li><NuxtLink to="/publication">Publication</NuxtLink></li>
                 <li><NuxtLink to="/volunteering">Volunteering</NuxtLink></li>
               </ul>
             </details>
