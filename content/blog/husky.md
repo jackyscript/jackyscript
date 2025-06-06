@@ -8,13 +8,13 @@ updated: 2025-06-01
 You may be wondering what the title is trying to say. It is, unsurprisingly, nothing special and has little to do with the actual mammal, the remains of clothing, or anything remotely related to theater.
 However, the title is not meant to mislead, but rather to demonstrate the habit of people in tech of naming technical tools after phenomena from the real world.
 
-Recently, I have worked with two interesting tools. One of them is [`Husky`](https://typicode.github.io/husky/).
+Recently, I have worked with two interesting tools for frontend development. One of them is [`Husky`](https://typicode.github.io/husky/).
 
 With it, you can easily set up custom processes called [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) that are automatically executed when working with the `git` version control system. Additionally, it allows you to share these git hooks with your team by including them in your repository.
 
 Most commonly, git hooks are used for applying static code analysis or formatting before committing your code to the repository—hence the `pre-commit` hook—to ensure code quality.
 
-Now, regarding the actual steps in the pre-commit hook, developers often use a tool called `lint-staged`. The idea is to check the files that are about to be saved into the repository and apply final changes. For example, you could use tools like [`eslint`](https://eslint.org/) or [`prettier`](https://prettier.io/docs/) to perform code quality checks.
+Now, regarding the actual steps in the pre-commit hook, in frontend development often a tool called `lint-staged` is used. The idea is to check the files that are about to be saved into the repository and apply final changes. For example, you could use tools like [`eslint`](https://eslint.org/) or [`prettier`](https://prettier.io/docs/) to perform code quality checks.
 
 So, my `pre-commit` file is nothing out of the ordinary:
 
