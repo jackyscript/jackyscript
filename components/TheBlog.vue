@@ -7,14 +7,12 @@ const { data: blogPosts } = await useAsyncData("blog", () =>
 <template>
   <section v-for="post in blogPosts" :key="post.id">
     <article>
-      <body>
-        <h4>{{ post.title }}</h4>
-        <p>{{ post.description }}</p>
-        <small>
-          <NuxtLink :to="post.path"> Continue reading </NuxtLink> -
-          {{ $dayjs(post.date).format("MMMM DD, YYYY") }}</small
-        >
-      </body>
+      <h4>{{ post.title }}</h4>
+      <p>{{ post.description }}</p>
+      <small>
+        <NuxtLink :to="post.path"> Continue reading </NuxtLink> -
+        {{ $dayjs(post.date).format("MMMM DD, YYYY") }}
+      </small>
     </article>
   </section>
 </template>
