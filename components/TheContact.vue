@@ -18,7 +18,7 @@ import ContactItem from "./ContactItem.vue";
     <a href="https://www.and-effect.com/" target="_blank" rel="noopener"
       >&effect</a
     >
-    in Berlin. Some tools I am working with are listed below:
+    in Berlin. Some tools I'm working with are listed below:
   </p>
   <ul>
     <li>
