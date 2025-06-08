@@ -8,6 +8,10 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: 'Dezhi Jacky Fu', // default fallback title
+      htmlAttrs: {
+        lang: 'en',
+      },
       link: [
         {
           rel: "icon",
