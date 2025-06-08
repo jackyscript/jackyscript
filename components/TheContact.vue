@@ -10,11 +10,11 @@ import ContactItem from "./ContactItem.vue";
     experience.
   </p>
   <p>
-    I am an engineer in the field of geodesy and geospatial information 🌐 by
+    I'm an engineer in the field of geodesy and geospatial information by
     training.
   </p>
   <p>
-    Currently, I work as a software developer at
+    I work as a software developer at
     <a href="https://www.and-effect.com/" target="_blank" rel="noopener"
       >&effect</a
     >
@@ -48,12 +48,6 @@ import ContactItem from "./ContactItem.vue";
     </li>
   </ul>
 
-  <ContactItem id="mail" value="dezhijacky.fu [ at ] gmail.com">
-    <template #icon>
-      <svgo-mail aria-hidden="true" alt="Mail icon" />
-    </template>
-    <template #heading>E-Mail</template>
-  </ContactItem>
   <ContactItem id="github">
     <template #icon><svgo-code aria-hidden="true" alt="Code icon" /> </template>
     <template #heading>Projects</template>
