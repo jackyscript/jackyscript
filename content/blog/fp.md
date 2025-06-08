@@ -125,7 +125,7 @@ const { data: posts } = await useAsyncData(
 </script>
 ```
 
-From my perspective, this approach looks more readable; you can clearly track where the data is coming from. More importantly, after that change, the paging will work without issues and the page info will displayed correctly.
+From my perspective, this approach looks more readable; you can clearly track where the data is coming from. More importantly, after that change, the paging will work without issues and the page info will be displayed correctly.
 
 Thanks for checking in. See you next time!
 
