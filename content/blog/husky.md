@@ -12,7 +12,7 @@ Recently, I have worked with two interesting tools for frontend development. One
 
 ## What is Husky?
 
-[`Husky`](https://typicode.github.io/husky/) is a tool that makes it easy to use [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) in your project. Git hooks are scripts that run automatically at certain points in your git workflow, such as before you commit or push code. Husky helps you set up and share these hooks with your team by including them in your repository.
+[`Husky`](https://typicode.github.io/husky/) is a tool that makes it easier to use [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) in your project. Git hooks are scripts that run automatically at certain points in your git workflow, such as before you commit or push code. Husky helps you set up and share these hooks with your team by including them in your repository.
 
 ## Why Use Git Hooks?
 
