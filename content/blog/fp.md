@@ -91,7 +91,7 @@ When doing so, the page most likely will not work reliably, or generally speakin
 
 In functional programming, overwriting variables is frowned upon. Preferably, values should always be returned, and new computations should be based on that output.
 
-In this particular case, when looking into the respective documentation section of Nuxt, this is the recommended method:
+In this particular case, when looking into the respective [documentation](https://nuxt.com/docs/api/composables/use-async-data#params) section of Nuxt, this is the recommended method:
 
 > The handler function should be side-effect free to ensure predictable behavior during SSR and CSR hydration. If you need to trigger side effects, use the [callOnce](https://nuxt.com/docs/api/utils/call-once) utility to do so.
 
