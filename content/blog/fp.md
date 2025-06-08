@@ -5,7 +5,13 @@ updated: 2025-06-08
 
 # Functional programming in action - Side effects
 
-Recently I found something interesting, when working with the Nuxt framework and `useAsyncData`.
+Recently, I encountered something puzzling while working with the Nuxt framework and `useAsyncData`.
+
+I had a page where I wanted to display information about the current page out of a total number of pages. Strangely, it only worked if I refreshed the page, but would break when navigating to it from another page.
+
+That was when I recalled a lesson from my journey into functional programming: avoid relying on side effects whenever possible.
+
+In this case, applying a basic principle of functional programming fortunately fixed my program.
 
 But before I begin let's start slowly with some basic explanations.
 
