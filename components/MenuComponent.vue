@@ -11,7 +11,7 @@ function brighten() {
 
 const preferredTheme = computed(() => {
   if (import.meta.client) {
-  // Check if the client supports prefers-color-scheme
+    // Check if the client supports prefers-color-scheme
     return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
@@ -25,9 +25,23 @@ const currentTheme = ref(preferredTheme.value);
 <template>
   <nav class="container">
     <ul>
-      <li><strong>Menu</strong></li>
+      <li>
+        <NuxtLink to="/">Home</NuxtLink>
+      </li>
+      <li><NuxtLink to="/blog">Blog</NuxtLink></li>
     </ul>
     <ul>
+      <li>
+        <details class="dropdown">
+          <summary>About me</summary>
+          <ul dir="rtl">
+            <li><NuxtLink to="/experience">Experience</NuxtLink></li>
+            <li><NuxtLink to="/education">Education</NuxtLink></li>
+            <li><NuxtLink to="/publication">Publication</NuxtLink></li>
+            <li><NuxtLink to="/volunteering">Volunteering</NuxtLink></li>
+          </ul>
+        </details>
+      </li>
       <li v-if="currentTheme === 'light'">
         <button role="button" title="Darken" @click="darken">
           <svgo-darken aria-hidden="true" class="logo" alt="Darken" />
@@ -46,6 +60,6 @@ const currentTheme = ref(preferredTheme.value);
 
 <style scoped>
 .logo {
-  width: 20px;
+  width: 1rem;
 }
 </style>
