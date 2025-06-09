@@ -18,35 +18,28 @@ import ContactItem from "./ContactItem.vue";
     <a href="https://www.and-effect.com/" target="_blank" rel="noopener"
       >&effect</a
     >
-    in Berlin. Some tools I'm working with are listed below:
+    in Berlin. Some tools I'm working with:
   </p>
-  <ul>
-    <li>
-      <small data-tooltip="Vue"
-        ><svgo-logo aria-hidden="true" alt="Vue Logo"
-      /></small>
-    </li>
-    <li>
-      <small data-tooltip="Nuxt"
-        ><svgo-icon-green aria-hidden="true" alt="Nuxt Logo"
-      /></small>
-    </li>
-    <li>
-      <small data-tooltip="TypeScript"
-        ><svgo-ts-logo-128 aria-hidden="true" alt="TS Logo"
-      /></small>
-    </li>
-    <li>
-      <small data-tooltip="JS"
-        ><svgo-js aria-hidden="true" alt="JS Logo"
-      /></small>
-    </li>
-    <li>
-      <small data-tooltip="Python"
-        ><svgo-python-logo-only aria-hidden="true" alt="Python Logo"
-      /></small>
-    </li>
-  </ul>
+
+  <section>
+    <div class="grid">
+      <div tabindex="0" data-tooltip="Vue">
+        <svgo-logo aria-hidden="true" alt="Vue Logo" />
+      </div>
+      <div tabindex="0" data-tooltip="Nuxt">
+        <svgo-icon-green aria-hidden="true" alt="Nuxt Logo" />
+      </div>
+      <div tabindex="0" data-tooltip="TypeScript">
+        <svgo-ts-logo-128 aria-hidden="true" alt="TS Logo" />
+      </div>
+      <div tabindex="0" data-tooltip="JS">
+        <svgo-js aria-hidden="true" alt="JS Logo" />
+      </div>
+      <div tabindex="0" data-tooltip="Python">
+        <svgo-python-logo-only aria-hidden="true" alt="Python Logo" />
+      </div>
+    </div>
+  </section>
 
   <ContactItem id="github">
     <template #icon><svgo-code aria-hidden="true" alt="Code icon" /> </template>
@@ -65,12 +58,7 @@ svg {
   width: 2rem;
 }
 
-ul li {
-  list-style: circle;
-}
-
-ul:focus {
-  outline: var(--pico-outline-width) solid var(--pico-primary-focus);
-  outline-offset: calc(var(--pico-spacing, 1rem) * 0.5);
+.grid {
+  justify-items: center;
 }
 </style>
