@@ -20,6 +20,14 @@ const preferredTheme = computed(() => {
 });
 
 const currentTheme = ref(preferredTheme.value);
+
+watch(
+  preferredTheme,
+  (newValue, oldValue) => {
+    document.documentElement.setAttribute("class", newValue);
+  },
+  { immediate: true }
+)
 </script>
 
 <template>
