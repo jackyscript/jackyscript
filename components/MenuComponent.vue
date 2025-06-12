@@ -22,13 +22,9 @@ const preferredTheme = computed(() => {
 const currentTheme = ref(preferredTheme.value);
 
 if (import.meta.client) {
-  watch(
-    currentTheme,
-    (newValue, oldValue) => {
-      document.documentElement.setAttribute("class", newValue);
-    },
-    { immediate: true }
-  )
+  watchEffect(() => {
+    document.documentElement.setAttribute("class", currentTheme.value);
+  });
 }
 </script>
 
@@ -71,10 +67,5 @@ if (import.meta.client) {
 <style scoped>
 .logo {
   width: 1rem;
-}
-
-nav.container {
-  position: sticky;
-  top: 0;
 }
 </style>
