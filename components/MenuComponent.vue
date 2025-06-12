@@ -23,7 +23,7 @@ const currentTheme = ref(preferredTheme.value);
 
 if (import.meta.client) {
   watch(
-    preferredTheme,
+    currentTheme,
     (newValue, oldValue) => {
       document.documentElement.setAttribute("class", newValue);
     },
