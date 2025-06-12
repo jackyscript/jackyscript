@@ -75,5 +75,6 @@ if (import.meta.client) {
 
 nav .container {
   position: sticky;
+  top: 0;
 }
 </style>
