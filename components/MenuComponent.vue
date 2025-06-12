@@ -72,4 +72,8 @@ if (import.meta.client) {
 .logo {
   width: 1rem;
 }
+
+nav .container {
+  position: sticky;
+}
 </style>
