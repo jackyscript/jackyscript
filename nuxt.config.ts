@@ -22,4 +22,10 @@ export default defineNuxtConfig({
     },
     baseURL: "/jackyscript/",
   },
+  content: {
+    build: {
+      markdown: {
+        highlight: false
+    }
+  }
 });
