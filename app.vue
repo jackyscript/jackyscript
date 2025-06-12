@@ -1,15 +1,10 @@
 <template>
-  <div>
     <NuxtRouteAnnouncer />
-    <header>
-      <HeaderComponent />
-      <MenuComponent />
-    </header>
+    <HeaderComponent> <MenuComponent /></HeaderComponent>
 
     <NuxtPage />
 
     <footer class="container">
       <a href="#top">Go to top</a>
     </footer>
-  </div>
 </template>
