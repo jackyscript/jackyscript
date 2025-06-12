@@ -34,12 +34,14 @@ if (import.meta.client) {
 <style scoped>
 .sticky {
   position: sticky;
-  top: 0; /* or any offset you want from the top */
-  z-index: 100; /* optional: ensures it stays above other elements */
+  top: 0;
+  z-index: 100;
+  transition: padding 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sticky.scrolled {
   background: var(--pico-background-color);
-  border-bottom: 1px solid var(--pico-muted-border-color);
+  border-block-end: 1px solid var(--pico-muted-border-color);
+  padding-inline: 1rem;
 }
 </style>
