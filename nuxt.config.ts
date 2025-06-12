@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         highlight: false
+      }    
     }
-  }
+  },
 });
