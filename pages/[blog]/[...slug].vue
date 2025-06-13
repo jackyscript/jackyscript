@@ -4,6 +4,16 @@ const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection("content").path(route.path).first();
 });
 
+const { data: otherPosts } = await useAsyncData(
+  `surround-${route.path}`,
+  () => {
+    return queryCollectionItemSurroundings("content", route.path).order(
+      "date",
+      "DESC"
+    );
+  }
+);
+
 useSeoMeta({
   title: page.value?.title,
   description: page.value?.description,
@@ -21,7 +31,10 @@ useSeoMeta({
         </small>
       </div>
       <div>
-        <small :data-tooltip="$dayjs(page.updated).format('MMMM DD, YYYY')" data-placement="bottom">
+        <small
+          :data-tooltip="$dayjs(page.updated).format('MMMM DD, YYYY')"
+          data-placement="bottom"
+        >
           Last changed {{ $dayjs(page.updated).fromNow() }}
         </small>
       </div>
@@ -35,5 +48,23 @@ useSeoMeta({
         <NuxtLink to="/">Go back home</NuxtLink>
       </div>
     </template>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <NuxtLink v-if="otherPosts?.[1]" :to="otherPosts[1].path">
+              Previous post: {{ otherPosts[1].title }}
+            </NuxtLink>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <NuxtLink v-if="otherPosts?.[0]" :to="otherPosts[0].path">
+              Next post: {{ otherPosts[0].title }}
+            </NuxtLink>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </MainComponent>
 </template>
