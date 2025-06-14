@@ -90,8 +90,7 @@ updated: 2025-06-14
 ```
 
 ## Summary
-
-This feature alone is not so exciting, but for me, it was a test field where I could experiment—taking `lint-staged` and using it for a different use case—which served me well.
+Adding a modified timestamp after changing a blog post is a practical and easy-to-understand use case for repurposing `husky` and `lint-staged` beyond their typical usage scenarios. It demonstrates their flexibility and provided me with practical insight into development workflows that are limited only by one's creativity.
 
 Thanks for checking in. See you next time!
 
