@@ -73,7 +73,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 1.5rem;
-  min-height: .5rem;
+  min-width: 2rem;
+  min-height: 2rem;
 }
 </style>
