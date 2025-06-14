@@ -18,28 +18,8 @@ import ContactItem from "./ContactItem.vue";
     <a href="https://www.and-effect.com/" target="_blank" rel="noopener"
       >&effect</a
     >
-    in Berlin. Some tools I'm working with:
+    in Berlin.
   </p>
-
-  <section>
-    <div class="grid">
-      <div tabindex="0" data-tooltip="Vue">
-        <svgo-logo aria-hidden="true" alt="Vue Logo" />
-      </div>
-      <div tabindex="0" data-tooltip="Nuxt">
-        <svgo-icon-green aria-hidden="true" alt="Nuxt Logo" />
-      </div>
-      <div tabindex="0" data-tooltip="TypeScript">
-        <svgo-ts-logo-128 aria-hidden="true" alt="TS Logo" />
-      </div>
-      <div tabindex="0" data-tooltip="JS">
-        <svgo-js aria-hidden="true" alt="JS Logo" />
-      </div>
-      <div tabindex="0" data-tooltip="Python">
-        <svgo-python-logo-only aria-hidden="true" alt="Python Logo" />
-      </div>
-    </div>
-  </section>
 
   <ContactItem id="github">
     <template #icon><svgo-code aria-hidden="true" alt="Code icon" /> </template>
