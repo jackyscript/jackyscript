@@ -68,4 +68,12 @@ if (import.meta.client) {
 .logo {
   width: 1rem;
 }
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  min-height: .5rem;
+}
 </style>
