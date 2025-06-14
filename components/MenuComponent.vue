@@ -39,7 +39,7 @@ if (import.meta.client) {
     <ul>
       <li>
         <details class="dropdown">
-          <summary>About me</summary>
+          <summary>About</summary>
           <ul dir="rtl">
             <li><NuxtLink to="/experience">Experience</NuxtLink></li>
             <li><NuxtLink to="/education">Education</NuxtLink></li>
