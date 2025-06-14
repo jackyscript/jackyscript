@@ -1,0 +1,16 @@
+@use "@picocss/pico/scss/pico" with (
+  $enable-semantic-container: true,
+  $theme-color: "purple",
+  $modules: (
+    "content/table": false,
+    "content/figure": false,
+    "forms/input-color": false,
+    "forms/input-date": false,
+    "forms/input-file": false,
+    "forms/input-range": false,
+    "forms/input-search": false,
+    "components/modal": false,
+    "components/progress": false,
+    "utilities/reduce-motion": false
+  )
+);

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
-  css: ["~/assets/css/pico.jade.min.css"],
+  css: ["~/assets/scss/main.scss"],
   modules: ["nuxt-svgo", "@nuxt/content", "@nuxt/eslint", "dayjs-nuxt"],svgo: {
     defaultImport: 'component',
   },
