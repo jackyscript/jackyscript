@@ -1,6 +1,6 @@
 ---
 date: 2025-05-31
-updated: 2025-06-08
+updated: 2025-06-15
 ---
 
 # Siberian dogs, fiber, fluff and theater
@@ -78,6 +78,15 @@ Then I added that to the `lint-staged` section to make sure each time I commit t
   },
   ...
 }
+```
+
+After I commit this blog post, its `updated` date is set to the changed date automatically:
+
+```yaml
+---
+date: 2025-05-28
+updated: 2025-06-14
+---
 ```
 
 ## Summary
