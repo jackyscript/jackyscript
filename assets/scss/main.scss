@@ -1,5 +1,6 @@
 @use "@picocss/pico/scss/pico" with (
   $enable-semantic-container: true,
+  $enable-transitions: false,
   $theme-color: "purple",
   $modules: (
     "content/table": false,
