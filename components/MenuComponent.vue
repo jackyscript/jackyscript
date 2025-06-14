@@ -75,5 +75,6 @@ button {
   justify-content: center;
   min-width: 2rem;
   min-height: 2rem;
+  border-radius: 1rem;
 }
 </style>
