@@ -15,10 +15,4 @@ import EducationItem from './EducationItem.vue'
     <template #degree> B. Sc. Geodäsie und Geoinformation </template>
     <template #date>Okt. 2010 ‑ Sep. 2013</template>
   </EducationItem>
-  <EducationItem>
-    <template #institution> Werner‑Heisenberg‑Gymnasium </template>
-    <template #location>Garching</template>
-    <template #degree> Abitur </template>
-    <template #date>Aug. 2001 ‑ Jun. 2010</template>
-  </EducationItem>
 </template>

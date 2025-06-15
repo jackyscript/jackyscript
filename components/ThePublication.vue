@@ -28,9 +28,3 @@ import PublicationItem from './PublicationItem.vue'
     </ul>
   </PublicationItem>
 </template>
-
-<style scoped>
-ul li {
-  list-style: circle;
-}
-</style>

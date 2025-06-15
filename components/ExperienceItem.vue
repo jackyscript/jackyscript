@@ -17,5 +17,3 @@
     </article>
   </section>
 </template>
-
-<style scoped></style>

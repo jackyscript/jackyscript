@@ -204,14 +204,3 @@ import ExperienceItem from './ExperienceItem.vue'
     </ul>
   </ExperienceItem>
 </template>
-
-<style scoped>
-ul li {
-  list-style: circle;
-}
-
-ul:focus {
-  outline: var(--pico-outline-width) solid var(--pico-primary-focus);
-  outline-offset: calc(var(--pico-spacing, 1rem) * 0.5);
-}
-</style>
