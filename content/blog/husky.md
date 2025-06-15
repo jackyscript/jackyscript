@@ -62,7 +62,7 @@ Here, `date` is when the post was created, and `updated` is the last time it was
 ### Keeping the `updated` Date Current
 
 I wanted to make sure that, whenever I edit a blog post, it contains the last updated date.
-For that I implemented a small shell script. It computes the current date, for instance `2025-05-31`, which represents `May 31, 2025`, and adds that to whatever date is given in the markdown file at the key `updated`:
+For that I implemented a small shell script. It computes the current date, to the date of writing i.e. `2025-05-31`, which represents `May 31, 2025`, and adds that to the markdown file at the key `updated`:
 
 ```sh
 sed -i "0,/^updated: [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/s//updated: $(date +%Y-%m-%d)/" "$1"
@@ -85,7 +85,7 @@ After I commit this blog post, its `updated` date is set to the changed date aut
 ```yaml
 ---
 date: 2025-05-28
-updated: 2025-06-14
+updated: 2025-05-31
 ---
 ```
 
