@@ -21,6 +21,7 @@ import ContactItem from "./ContactItem.vue";
     in Berlin.
   </p>
 
+  <hr >
   <ContactItem id="github">
     <template #icon><svgo-code aria-hidden="true" alt="Code icon" /> </template>
     <template #heading>Projects</template>
@@ -29,6 +30,18 @@ import ContactItem from "./ContactItem.vue";
       <a href="https://github.com/jackyscript" target="_blank" rel="noopener"
         >Go here to see my personal projects on github</a
       ></template
+    >
+  </ContactItem>
+
+  <ContactItem id="mail">
+    <template #icon><svgo-mail aria-hidden="true" alt="Mail icon" /> </template>
+    <template #heading>dezhijacky.fu [ at ] gmail.com</template>
+    >
+  </ContactItem>
+
+  <ContactItem id="base">
+    <template #icon><svgo-pin aria-hidden="true" alt="Map icon" /> </template>
+    <template #heading>Berlin, Germany</template>
     >
   </ContactItem>
 </template>

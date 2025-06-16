@@ -1,20 +1,9 @@
-<script setup lang="ts">
-interface Props {
-  id: string
-  value?: string
-}
-
-withDefaults(defineProps<Props>(), {
-  value: undefined,
-})
-</script>
 <template>
   <section>
     <article>
-      <slot name="icon"/>
-      <h3><slot name="heading"/></h3>
-      <p v-if="value !== undefined" />
-      <slot name="link">{{ value }}</slot>
+      <slot name="icon" />
+      <h5><slot name="heading" /></h5>
+      <slot name="link" />
     </article>
   </section>
 </template>
