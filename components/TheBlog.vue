@@ -35,7 +35,7 @@ useSeoMeta({
 </template>
 
 <style scoped>
-p {
+article p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
