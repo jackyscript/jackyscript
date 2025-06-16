@@ -49,13 +49,13 @@ if (import.meta.client) {
         </details>
       </li>
       <li v-if="currentTheme === 'light'">
-        <button role="button" title="Darken" class="outline secondary" @click="darken">
+        <button role="button" title="Darken" class="primary" @click="darken">
           <svgo-darken aria-hidden="true" alt="Darken" @click="darken"/>
           <span hidden>Darken</span>
         </button>
       </li>
       <li v-else>
-        <button role="button" title="Brighten" class="outline secondary" @click="brighten">
+        <button role="button" title="Brighten" class="primary" @click="brighten">
           <svgo-brighten aria-hidden="true" alt="Brighten" @click="brighten"/>
           <span hidden>Brighten</span>
         </button>
