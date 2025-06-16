@@ -1,6 +1,6 @@
 ---
 date: 2025-05-28
-updated: 2025-05-31
+updated: 2025-06-16
 ---
 
 # Hello visitor!
@@ -9,7 +9,7 @@ Welcome to my first blog post! I finally spent some time and set up `Nuxt Conten
 
 It was more difficult than I expected, but I would like to share with you what I have found out.
 
-I created my first page, which is the page you are looking at, in the folder `content` as described in the `Nuxt Content` [documentation](https://content.nuxt.com/docs/getting-started/installation).
+I created my first page, which is the page you are looking at, in the directory `content` as described in the `Nuxt Content` [documentation](https://content.nuxt.com/docs/getting-started/installation).
 
 At the time of writing (May 2025), unfortunately, the documentation is lacking specific explanations or examples on how to integrate markdown files in an existing page structure beyond the usual index, i.e. the path at `/`, page examples.
 
@@ -42,7 +42,7 @@ const { data: blogPosts } = await useAsyncData("blog", () =>
 </template>
 ```
 
-- In the `pages` directory, create a folder called `[blog]`. The name and the square brackets around it will make the path dynamic and accessible for `Nuxt`, and a dynamic page called `[...slug].vue` with the following content:
+- In the `pages` directory, create a subdirectory called `[blog]`. The square brackets around the directory's name will make the route [dynamic](https://nuxt.com/docs/guide/directory-structure/pages#dynamic-routes) and accessible for `Nuxt`. Add a file `[...slug].vue` in the new `[blog]` directory, this is going to be a [catch-all route](https://nuxt.com/docs/guide/directory-structure/pages#catch-all-route), with the following content:
 ```vue
 <script setup>
 const route = useRoute();
