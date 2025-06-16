@@ -5,6 +5,11 @@ const { data: blogPosts } = await useAsyncData("blog", () =>
 </script>
 
 <template>
+  <h1>Jacky's Blog</h1>
+  <p>
+    Recent learnings and thoughts on various topics, most often related to programming.
+  </p>
+  <small>There are currently {{ blogPosts?.length }} posts in total.</small>
   <section v-for="post in blogPosts" :key="post.id">
     <article>
       <h4>{{ post.title }}</h4>
