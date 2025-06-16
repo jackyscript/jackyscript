@@ -21,7 +21,9 @@ useSeoMeta({
   <p>
     {{ description }}
   </p>
-  <small>{{ totalPageDescription }}</small>
+  <section>
+    <small>{{ totalPageDescription }}</small>
+  </section>
   <section v-for="post in blogPosts" :key="post.id">
     <article>
       <h4>{{ post.title }}</h4>
