@@ -42,7 +42,8 @@ const { data: blogPosts } = await useAsyncData("blog", () =>
 </template>
 ```
 
-- In the `pages` directory, create a subdirectory called `[blog]`. The square brackets around the directory's name will make the route [dynamic](https://nuxt.com/docs/guide/directory-structure/pages#dynamic-routes) and accessible for `Nuxt`. Add a file `[...slug].vue` in the new `[blog]` directory, this is going to be a [catch-all route](https://nuxt.com/docs/guide/directory-structure/pages#catch-all-route), with the following content:
+- In the `pages` directory, create a subdirectory called `[blog]`. The square brackets around the directory's name will make the route [dynamic](https://nuxt.com/docs/guide/directory-structure/pages#dynamic-routes) and accessible for `Nuxt`.
+- Add a file `[...slug].vue` in the new `[blog]` directory, this is going to be a [catch-all route](https://nuxt.com/docs/guide/directory-structure/pages#catch-all-route), with the following content:
 ```vue
 <script setup>
 const route = useRoute();
