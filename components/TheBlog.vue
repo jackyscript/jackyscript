@@ -2,14 +2,26 @@
 const { data: blogPosts } = await useAsyncData("blog", () =>
   queryCollection("content").order("date", "DESC").all()
 );
+
+const title = "Jacky's Blog";
+const description =
+  "Recent learnings and thoughts on various topics, most often related to programming.";
+const totalPageDescription = computed(
+  () => `There are currently ${blogPosts?.value?.length ?? 0} posts in total.`
+);
+
+useSeoMeta({
+  title: title,
+  description: description,
+});
 </script>
 
 <template>
-  <h1>Jacky's Blog</h1>
+  <h1>{{ title }}</h1>
   <p>
-    Recent learnings and thoughts on various topics, most often related to programming.
+    {{ description }}
   </p>
-  <small>There are currently {{ blogPosts?.length }} posts in total.</small>
+  <small>{{ totalPageDescription }}</small>
   <section v-for="post in blogPosts" :key="post.id">
     <article>
       <h4>{{ post.title }}</h4>
