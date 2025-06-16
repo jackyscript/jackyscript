@@ -35,7 +35,7 @@ import ContactItem from "./ContactItem.vue";
 
 <style scoped>
 svg {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .grid {
