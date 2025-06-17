@@ -20,8 +20,6 @@ import ContactItem from "./ContactItem.vue";
     >
     in Berlin.
   </p>
-
-  <hr >
   <ContactItem id="github">
     <template #icon><svgo-code aria-hidden="true" alt="Code icon" /> </template>
     <template #heading>Projects</template>
@@ -49,9 +47,5 @@ import ContactItem from "./ContactItem.vue";
 <style scoped>
 svg {
   width: 1.5rem;
-}
-
-.grid {
-  justify-items: center;
 }
 </style>
