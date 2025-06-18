@@ -1,6 +1,6 @@
 <template>
   <NuxtRouteAnnouncer />
-  <HeaderComponent> <MenuComponent /> </HeaderComponent>
+  <HeaderComponent> <MenuComponent /><hr ></HeaderComponent>
 
   <NuxtPage />
 

@@ -20,6 +20,8 @@ import ContactItem from "./ContactItem.vue";
     >
     in Berlin.
   </p>
+
+  <hr >
   <ContactItem id="github">
     <template #icon><svgo-code aria-hidden="true" alt="Code icon" /> </template>
     <template #heading>Projects</template>
@@ -33,13 +35,15 @@ import ContactItem from "./ContactItem.vue";
 
   <ContactItem id="mail">
     <template #icon><svgo-mail aria-hidden="true" alt="Mail icon" /> </template>
-    <template #heading>dezhijacky.fu [ at ] gmail.com</template>
+    <template #heading>Get in touch</template>
+    <template #description>dezhijacky.fu [ at ] gmail.com</template>
     >
   </ContactItem>
 
   <ContactItem id="base">
     <template #icon><svgo-pin aria-hidden="true" alt="Map icon" /> </template>
-    <template #heading>Berlin, Germany</template>
+    <template #heading>Based in</template>
+    <template #description>Berlin, Germany</template>
     >
   </ContactItem>
 </template>
@@ -47,5 +51,9 @@ import ContactItem from "./ContactItem.vue";
 <style scoped>
 svg {
   width: 1.5rem;
+}
+
+.grid {
+  justify-items: center;
 }
 </style>
