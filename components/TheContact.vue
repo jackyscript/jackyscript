@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import ContactItem from "./ContactItem.vue";
-</script>
-
 <template>
   <h1>Hello 👋</h1>
   <p>

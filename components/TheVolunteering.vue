@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import VolunteeringItem from './VolunteeringItem.vue'
 const title = "Volunteering";
 const description = "Causes I support.";
 

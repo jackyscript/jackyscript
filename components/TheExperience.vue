@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ExperienceItem from "./ExperienceItem.vue";
 const title = "Experience";
 const description =
   "Positions and projects I've worked on.";

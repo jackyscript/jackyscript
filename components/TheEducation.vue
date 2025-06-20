@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import EducationItem from "./EducationItem.vue";
 const title = "Education";
 const description = "More about my educational background.";
 
