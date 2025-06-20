@@ -46,9 +46,4 @@ svg {
   width: 1rem;
 }
 
-footer.container section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 </style>
