@@ -3,7 +3,7 @@ const { data: blogPosts } = await useAsyncData("blog", () =>
   queryCollection("content").order("date", "DESC").all()
 );
 
-const title = "Jacky's Blog";
+const title = "Writings";
 const description =
   "Recent learnings and thoughts on various topics, most often related to programming.";
 const totalPageDescription = computed(
