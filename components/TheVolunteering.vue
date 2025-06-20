@@ -1,8 +1,19 @@
 <script setup lang="ts">
 import VolunteeringItem from './VolunteeringItem.vue'
+const title = "Volunteering";
+const description = "Causes I support.";
+
+useSeoMeta({
+  title: title,
+  description: description,
+});
 </script>
 
 <template>
+  <h1>{{ title }}</h1>
+  <p>
+    {{ description }}
+  </p>
   <VolunteeringItem>
     <template #organisation>
       codebar
