@@ -4,8 +4,8 @@
       <details>
         <summary>
           <slot name="icon" />
-          <h4><slot name="organisation"/></h4>
-          <h5><slot name="role"/></h5>
+          <h4><slot name="role"/></h4>
+          <h5><slot name="organisation"/></h5>
           <footer>
             <small><slot name="date"/></small>
           </footer>

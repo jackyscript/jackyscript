@@ -4,8 +4,8 @@
       <details>
         <summary>
           <slot name="icon" />
-          <h4><slot name="company"/></h4>
-          <h5><slot name="position"/></h5>
+          <h4><slot name="position"/></h4>
+          <h5><slot name="company"/></h5>
           <h6>
             <slot name="location"/>
           </h6>
