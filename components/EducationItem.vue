@@ -3,6 +3,7 @@
     <article>
       <details>
         <summary tabindex="0">
+          <slot name="icon" />
           <h4><slot name="institution" /></h4>
           <h5><slot name="degree" /></h5>
           <h6>

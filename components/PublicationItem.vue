@@ -3,6 +3,7 @@
     <article>
       <details>
         <summary>
+          <slot name="icon" />
           <h4><slot name="title" /></h4>
           <h5><slot name="occupation" /></h5>
           <h6>

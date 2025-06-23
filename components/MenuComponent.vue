@@ -35,18 +35,9 @@ if (import.meta.client) {
         <NuxtLink to="/">Home</NuxtLink>
       </li>
       <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+      <li><NuxtLink to="/experience">Experience</NuxtLink></li>
     </ul>
     <ul>
-      <li>
-        <details class="dropdown">
-          <summary>About</summary>
-          <ul dir="rtl">
-            <li><NuxtLink to="/experience">Experience</NuxtLink></li>
-            <li><NuxtLink to="/education">Education</NuxtLink></li>
-            <li><NuxtLink to="/volunteering">Volunteering</NuxtLink></li>
-          </ul>
-        </details>
-      </li>
       <li v-if="currentTheme === 'light'">
         <button role="button" title="Darken" class="primary" @click="darken">
           <svgo-darken aria-hidden="true" alt="Darken" @click="darken"/>

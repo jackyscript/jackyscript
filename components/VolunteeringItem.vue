@@ -3,6 +3,7 @@
     <article>
       <details>
         <summary>
+          <slot name="icon" />
           <h4><slot name="organisation"/></h4>
           <h5><slot name="role"/></h5>
           <footer>
