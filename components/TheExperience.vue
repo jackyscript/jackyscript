@@ -33,6 +33,7 @@ useSeoMeta({
         I maintain a dropping hub, manage donated devices, and forward them
         accordingly.
       </p>
+      <p>You can lookup the current status of my dropping hub <a href="https://platform.labdoo.org/de/hub?h=219571" target="_blank" rel="noopener">here</a></p>
     </VolunteeringItem>
     <ExperienceItem class="circle right">
       <template #icon>
