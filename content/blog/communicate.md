@@ -1,11 +1,11 @@
 ---
 date: 2025-06-23
-updated: 2025-06-23
+updated: 2025-06-24
 ---
 
-# The most interesting and difficult parts of working in tech
+# The most interesting and challenging part of working in tech
 
-Last weekend, I talked with a person who has worked for over 20 years in tech. We discussed life and work in general, as well as my recent career switch. From this conversation, I gathered several takeaways that I found very interesting.
+Last weekend, I talked with a person who has worked for over 20 years in tech. We discussed life and work in general. From this conversation, I gathered several takeaways that I found very interesting and want to share with you.
 
 ## Technology
 
@@ -23,7 +23,7 @@ More important than technologies are the people behind the screens. One has to b
 
 > Some people are more sensitive, some are more talkative; with every person, you will learn how to communicate with them over time.
 
-When talking with someone about a task, a requirement, a feature, or something similar, I recommend simple techniques such as:
+When talking with someone about a task, a requirement, a feature, or something similar, I recommend techniques such as:
 - Paraphrase: Summarize what you have heard and repeat it for yourself and your interlocutor, so the other side can reflect on your interpretation. They get the chance to learn what you have understood and how their message has reached you.
 - Extract actionables or takeaways: This is often missing after a typical long meeting. People talk about various topics, and after the meeting, nobody really knows how to proceed or who is responsible for what. Instead, try to create short, reasonable steps for how to continue. Also, setting a key goal at the beginning of the conversation can be useful.
 - Double-check: When talking with someone, try to find out if your interlocutor is still on the same page. You could ask, "Should I explain in more detail, or should we continue?" Your counterpart will thank you for that; often, they do not want to be rude and interrupt you, so they will appreciate your double-checking.
