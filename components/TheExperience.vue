@@ -503,7 +503,7 @@ useSeoMeta({
   height: 20px;
   background-color: var(--pico-background-color);
   border: 4px solid var(--pico-primary-border);
-  bottom: 50%;
+  top: 0%;
   border-radius: 50%;
   z-index: 1;
   box-shadow: var(--pico-box-shadow);
@@ -518,7 +518,7 @@ useSeoMeta({
 .right::before {
   content: "";
   position: absolute;
-  bottom: 50%;
+  top: 0%;
   width: 0;
   z-index: 1;
   left: 30px;
