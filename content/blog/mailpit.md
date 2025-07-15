@@ -3,7 +3,7 @@ date: 2025-07-15
 updated: 2025-07-15
 ---
 
-# Using Mailpit for Local Email Testing: My Experience
+# Using Mailpit for Local E-Mail Testing
 
 Recently, I needed to test a web application that sends emails after various events—things like users registrations, password resets, and notifications triggered by user actions. It is quite cumbersome to set up different mail accounts and make sure to receive the emails, especially when all you have is a mail terminal program.
 
