@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello 👋</h1>
+  <h1>Hello</h1>
   <p>
     My name is Jacky Fu (pronouns "he/him"). I have a passion for reactive and
     functional programming and I care for accessibility, user and developer
