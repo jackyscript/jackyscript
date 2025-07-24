@@ -17,12 +17,13 @@
     "**/*.md": "sh -c 'sed -i \"0,/^updated: [0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}/s//updated: $(date +%Y-%m-%d)/\" \"$1\"' _"
   },
   "dependencies": {
-    "@nuxt/content": "^3.5.1",
+    "@nuxt/content": "^3.6.3",
     "@nuxt/eslint": "^1.4.1",
     "@picocss/pico": "^2.1.1",
+    "better-sqlite3": "^12.2.0",
     "dayjs-nuxt": "^2.1.11",
     "eslint": "^9.28.0",
-    "nuxt": "^3.17.3",
+    "nuxt": "^4.0.1",
     "nuxt-svgo": "^4.1.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1"
