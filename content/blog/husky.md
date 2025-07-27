@@ -1,6 +1,6 @@
 ---
 date: 2025-05-31
-updated: 2025-06-16
+updated: 2025-07-27
 ---
 
 # Siberian dogs, fiber, fluff and theater
@@ -8,11 +8,11 @@ updated: 2025-06-16
 You may be wondering what the title is trying to say. It is, unsurprisingly, nothing special and has little to do with the actual mammal, the remains of clothing, or anything remotely related to theater.
 However, the title is not meant to mislead, but rather to demonstrate the habit of people in tech of naming technical tools after phenomena from the real world.
 
-Recently, I have worked with two interesting tools for frontend development. One of them is [`Husky`](https://typicode.github.io/husky/).
+Recently, I was asked to setup automatic linting for frontend development. So I researched and stumbled upon on two tools that seemed to be suitable. One of them is [`Husky`](https://typicode.github.io/husky/).
 
 ## What is Husky?
 
-[`Husky`](https://typicode.github.io/husky/) is a tool that makes it easier to use [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) in your project. Git hooks are scripts that run automatically at certain points in your git workflow, such as before you commit or push code. Husky helps you set up and share these hooks with your team by including them in your repository.
+[`Husky`](https://typicode.github.io/husky/) is a tool that manages [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) in your project. Git hooks are scripts that run automatically at certain points in your git workflow, such as before you commit or push code. Now normally git hooks would be not part of your git repository, but rather something custom on your own machine. Husky creates script for this case instead that can be shared with your team by including them in your repository.
 
 ## Why Use Git Hooks?
 
@@ -20,7 +20,7 @@ Most commonly, git hooks are used for applying static code analysis or formattin
 
 ## Setting Up a Pre-commit Hook
 
-Now, regarding the actual steps in the pre-commit hook, in frontend development often a tool called `lint-staged` is used. The idea is to check the files that are about to be saved into the repository and apply final changes. For example, you could use tools like [`eslint`](https://eslint.org/) or [`prettier`](https://prettier.io/docs/) to perform code quality checks.
+Now, regarding the actual steps in the pre-commit hook, in frontend development I found out there is a tool called `lint-staged` which is often used. The idea is to check the files that are about to be saved into the repository and apply final changes. For example, you could use tools like [`eslint`](https://eslint.org/) or [`prettier`](https://prettier.io/docs/) to perform code quality checks.
 
 So, my `pre-commit` file is nothing out of the ordinary:
 
