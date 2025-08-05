@@ -5,8 +5,6 @@
   <NuxtPage />
 
   <footer class="container">
-    <a href="#top">Go to top</a>
-    <hr >
     <section class="grid">
       <small
         >This website is made with care using
