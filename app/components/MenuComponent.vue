@@ -31,13 +31,6 @@ if (import.meta.client) {
 <template>
   <nav class="container">
     <ul>
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-      <li><NuxtLink to="/experience">Experience</NuxtLink></li>
-    </ul>
-    <ul>
       <li v-if="currentTheme === 'light'">
         <button role="button" title="Darken" class="primary" @click="darken">
           <svgo-darken aria-hidden="true" alt="Darken" @click="darken"/>
